@@ -1,0 +1,601 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E8462618-9F78-4C65-8D45-4AB534675D05}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RailForms</RootNamespace>
+    <AssemblyName>RailForms</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\HOME\Desktop\project\railway\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>37BBA2AE496817801DA9598B4F61C641DF6BE590</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>RailForms_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Update_Delete_Schedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Update_Delete_Schedule.Designer.cs">
+      <DependentUpon>Add_Update_Delete_Schedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPanel.Designer.cs">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddNewTrain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewTrain.Designer.cs">
+      <DependentUpon>AddNewTrain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddNewUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewUser.Designer.cs">
+      <DependentUpon>AddNewUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminLogin.Designer.cs">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ByUserReservation.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ByUserReservation.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ByUserReservationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ByUserReservationForm.Designer.cs">
+      <DependentUpon>ByUserReservationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRreservationBtu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRreservationBtu.Designer.cs">
+      <DependentUpon>CRreservationBtu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRticket.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRticket.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRviewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRviewer.Designer.cs">
+      <DependentUpon>CRviewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRreservationBetween.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRreservationBetween.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ViewUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewUsers.Designer.cs">
+      <DependentUpon>ViewUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CancelationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CancelationForm.Designer.cs">
+      <DependentUpon>CancelationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.Designer.cs">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteUser.Designer.cs">
+      <DependentUpon>DeleteUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FullFareList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FullFareList.Designer.cs">
+      <DependentUpon>FullFareList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages.cs" />
+    <Compile Include="Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profile.Designer.cs">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SeeAllReservations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeeAllReservations.Designer.cs">
+      <DependentUpon>SeeAllReservations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckTrainSchedules.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckTrainSchedules.Designer.cs">
+      <DependentUpon>CheckTrainSchedules.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PNRquery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PNRquery.Designer.cs">
+      <DependentUpon>PNRquery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RemoveTrain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoveTrain.Designer.cs">
+      <DependentUpon>RemoveTrain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reservation.Designer.cs">
+      <DependentUpon>Reservation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchTrain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchTrain.Designer.cs">
+      <DependentUpon>SearchTrain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemLogin.Designer.cs">
+      <DependentUpon>SystemLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateProfile.Designer.cs">
+      <DependentUpon>UpdateProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemUserLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemUserLogin.Designer.cs">
+      <DependentUpon>SystemUserLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WelcomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WelcomePage.Designer.cs">
+      <DependentUpon>WelcomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SysUserPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SysUserPanel.Designer.cs">
+      <DependentUpon>SysUserPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Update_Delete_Schedule.resx">
+      <DependentUpon>Add_Update_Delete_Schedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPanel.resx">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddNewUser.resx">
+      <DependentUpon>AddNewUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddNewTrain.resx">
+      <DependentUpon>AddNewTrain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminLogin.resx">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ByUserReservation.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ByUserReservation.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ByUserReservationForm.resx">
+      <DependentUpon>ByUserReservationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRreservationBtu.resx">
+      <DependentUpon>CRreservationBtu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRticket.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRticket.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRviewer.resx">
+      <DependentUpon>CRviewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRreservationBetween.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRreservationBetween.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewUsers.resx">
+      <DependentUpon>ViewUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CancelationForm.resx">
+      <DependentUpon>CancelationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePassword.resx">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteUser.resx">
+      <DependentUpon>DeleteUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FullFareList.resx">
+      <DependentUpon>FullFareList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profile.resx">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeeAllReservations.resx">
+      <DependentUpon>SeeAllReservations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckTrainSchedules.resx">
+      <DependentUpon>CheckTrainSchedules.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PNRquery.resx">
+      <DependentUpon>PNRquery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemoveTrain.resx">
+      <DependentUpon>RemoveTrain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reservation.resx">
+      <DependentUpon>Reservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchTrain.resx">
+      <DependentUpon>SearchTrain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemLogin.resx">
+      <DependentUpon>SystemLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateProfile.resx">
+      <DependentUpon>UpdateProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemUserLogin.resx">
+      <DependentUpon>SystemUserLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WelcomePage.resx">
+      <DependentUpon>WelcomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysUserPanel.resx">
+      <DependentUpon>SysUserPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RailForms_TemporaryKey.pfx" />
+    <None Include="Resources\unnamed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alco_in_Jessore.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue_train-1366x768.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\railway-logo-edi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\administrator-icon %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\administrator-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eastern_Bengal_Railway_Logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\railway-logo-edi1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\administrator-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\railway-logo-edi2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-user-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove-user-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-group-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Log-Out-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit-Users-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Key-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Microsoft-DataBase-Utility-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Start-Menu-Search-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ticket_1_Icon_128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\personal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Profile-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Check-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vcard %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Info-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Redo-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Copy-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vcard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Info-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar_today.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reports-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document-scroll-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button-Info-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Apps-system-software-update-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document-add-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove-ticket-1-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\payment-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\metacontact_offline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button-Add-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button-Close-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reports-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Transport-Train-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Transport-Train-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alco_in_Jessore1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alco_in_Jessore2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Start-Menu-Search-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button-Add-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar_today1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bank-Check-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Windows-Run-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Arrow-Down-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ok-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-process-stop-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Microsoft-Query-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Microsoft-DataBase-Utility-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Transport-Train-icon %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10733621_670054053113627_1875443176_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10731284_669989066453459_455823624_o.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sys Login New.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sys Login New-001.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sys Login New-004.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sys Login New-003.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sys Login New-002.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sys Login New-006.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sys Login New-0011.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
