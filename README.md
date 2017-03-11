@@ -26,8 +26,8 @@
 [![RTRS Demo - User Panel](https://www.dropbox.com/s/wvudgta35z72mmb/User%20Panel.gif)](https://www.dropbox.com/s/wvudgta35z72mmb/User%20Panel.gif)
 
 # Used technologies
- Visual C#
- Visual Studio 2012
- SQL Server 2008
+ Visual C# ,
+ Visual Studio 2012 ,
+ SQL Server 2008 ,
  And basic Designing tools
 
